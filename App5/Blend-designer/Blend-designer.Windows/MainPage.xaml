@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Blend_designer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Blend_designer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.TopAppBar>
+		<AppBar Height="120" Background="#FFE42323">
+			<AppBarButton Icon="Accept" Label="AppBarButton" Height="120"/>
+		</AppBar>
+	</Page.TopAppBar>
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton Icon="Accept" Label="AppBarButton"/>
+			<AppBarButton Icon="Cancel" Label="AppBarButton"/>
+			<AppBarButton Icon="Accept" Label="AppBarButton"/>
+			<AppBarToggleButton Icon="Accept" Label="AppBarToggleButton"/>
+		</CommandBar>
+	</Page.BottomAppBar>
+
+    <Border Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="120"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="120"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<StackPanel Margin="92,120,821,271" Orientation="Vertical" Background="#FFE23030" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+				<StackPanel.RenderTransform>
+					<CompositeTransform SkewX="-0.344" TranslateX="0.77"/>
+				</StackPanel.RenderTransform>
+				<TextBlock HorizontalAlignment="Left" Margin="3,0,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Height="34" Width="97" FontSize="26.667"/>
+
+				<TextBox HorizontalAlignment="Left" Margin="3,0,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="153"/>
+				<PasswordBox HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top" Width="153" PlaceholderText="Password"/>
+				<Button Content="Login" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+				<Button Content="Cancel" RenderTransformOrigin="0.538,0.573" HorizontalAlignment="Stretch" Margin="0,0,-3,0" VerticalAlignment="Center"/>
+			</StackPanel>
+			<TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" Text="Page titel yaay" VerticalAlignment="Bottom" FontFamily="Segoe UI Light" FontSize="56"/>
+
+		</Grid>
+	</Border>
+</Page>
